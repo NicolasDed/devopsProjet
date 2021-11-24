@@ -16,6 +16,13 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals(0, $actual);
     }
 
+    public function testSingleMinutesLampsGiven6ShouldReturn1()
+    {
+        $berlinclockkata = new BerlinClockKata();
+        $actual = $berlinclockkata->singleMinutesLamps();
+        $this->assertEquals(1, $actual);
+    }
+
     public function testFiveMinutesLampsGiven0ShouldReturn0()
     {
         $berlinclockkata = new BerlinClockKata();
