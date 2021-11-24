@@ -102,21 +102,21 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals(1, $actual);
     }
 
-    public function testSingleHoursLampsGiven22ShouldReturn2()
+    public function testSingleHoursLampsGiven12ShouldReturn2()
     {
         $berlinclockkata = new BerlinClockKata();
         $actual = $berlinclockkata->singleHoursLamps();
         $this->assertEquals(2, $actual);
     }
 
-    public function testSingleHoursLampsGiven33ShouldReturn3()
+    public function testSingleHoursLampsGiven13ShouldReturn3()
     {
         $berlinclockkata = new BerlinClockKata();
         $actual = $berlinclockkata->singleHoursLamps();
         $this->assertEquals(3, $actual);
     }
 
-    public function testSingleHoursLampsGiven44ShouldReturn4()
+    public function testSingleHoursLampsGiven14ShouldReturn4()
     {
         $berlinclockkata = new BerlinClockKata();
         $actual = $berlinclockkata->singleHoursLamps();
@@ -130,6 +130,13 @@ class BerlinClockKataTest extends TestCase
         $berlinclockkata = new BerlinClockKata();
         $actual = $berlinclockkata->fiveHoursLamps();
         $this->assertEquals(0, $actual);
+    }
+
+    public function testFiveHoursLampsGiven6ShouldReturn1()
+    {
+        $berlinclockkata = new BerlinClockKata();
+        $actual = $berlinclockkata->fiveHoursLamps();
+        $this->assertEquals(1, $actual);
     }
 
 
