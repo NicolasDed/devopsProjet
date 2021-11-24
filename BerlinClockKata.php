@@ -25,5 +25,10 @@ class BerlinClockKata
         return 0;
     }
 
+    public function fiveHoursLamps()
+    {
+        return 0;
+    }
+
 
 }
