@@ -20,5 +20,10 @@ class BerlinClockKata
         return 0;
     }
 
+    public function singleHoursLamps()
+    {
+        return 0;
+    }
+
 
 }
