@@ -10,8 +10,15 @@ class BerlinClockKata
         $this->seconds = seconds;
     }
 
-    public function minuteLamps()
+    public function singleMinutesLamps()
     {
         return 0;
     }
+
+    public function fiveMinutesLamps()
+    {
+        return 0;
+    }
+
+
 }

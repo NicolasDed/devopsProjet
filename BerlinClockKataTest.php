@@ -6,13 +6,22 @@ require 'BerlinClockKata.php';
 
 class BerlinClockKataTest extends TestCase
 {
-    public function testMinuteLampsGiven0ShouldReturn0()
+    public function testSingleMinutesLampsGiven0ShouldReturn0()
     {
         // arrange
         $berlinclockkata = new BerlinClockKata();
         // act
-        $actual = $berlinclockkata->minuteLamps();
+        $actual = $berlinclockkata->singleMinutesLamps();
         // assert
         $this->assertEquals(0, $actual);
     }
+
+    public function testFiveMinutesLampsGiven0ShouldReturn0()
+    {
+        $berlinclockkata = new BerlinClockKata();
+        $actual = $berlinclockkata->fiveMinutesLamps();
+        $this->assertEquals(0, $actual);
+    }
+
+
 }
