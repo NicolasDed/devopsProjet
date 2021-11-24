@@ -30,5 +30,10 @@ class BerlinClockKata
         return 0;
     }
 
+    public function secondsLamp()
+    {
+        return 0;
+    }
+
 
 }
