@@ -28,8 +28,31 @@ class BerlinClockKata
 
     public function fiveMinutesLamps()
     {
-        if($this->minutes %5 == 0)
-            return
+        if($this->minutes %5 == 0){
+            if($this->minutes >=55)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=50)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=45)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=40)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=35)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=30)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=25)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=20)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=15)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=10)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=5)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+        }
+        echo "O O O O O O O O O O O O<br>";
         return 0;
     }
 
