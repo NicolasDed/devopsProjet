@@ -12,12 +12,7 @@ class BerlinClockKata
 
     public function singleMinutesLamps()
     {
-        if ($this->seconds %2 == 0){
-            echo "Y<br>";
-            return 0;
-        }
-        echo "O<br>";
-        return 1;
+        return 0;
     }
 
     public function fiveMinutesLamps()
@@ -37,7 +32,12 @@ class BerlinClockKata
 
     public function secondsLamp()
     {
-        return 0;
+        if ($this->seconds %2 == 0){
+            echo "Y<br>";
+            return 0;
+        }
+        echo "O<br>";
+        return 1;
     }
 
 
