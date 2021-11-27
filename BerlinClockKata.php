@@ -102,12 +102,12 @@ class BerlinClockKata
 
     public function clockMaker()
     {
-        $this->secondsLamp();
-        $this->fiveHoursLamps();
-        $this->singleHoursLamps();
-        $this->fiveMinutesLamps();
+        return
+        $this->secondsLamp() +
+        $this->fiveHoursLamps() +
+        $this->singleHoursLamps() +
+        $this->fiveMinutesLamps() +
         $this->singleMinutesLamps();
-        return 0;
     }
 
 
