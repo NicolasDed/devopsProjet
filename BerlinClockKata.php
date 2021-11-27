@@ -6,15 +6,15 @@ class BerlinClockKata
 
     public function __construct($hours, $minutes, $seconds) {
         $this->hours = $hours;
-        if(!is_int($hours) || $hours < 0)
+        if(!is_int($hours) || $hours < 0 || $hours > 23)
             throw new InvalidArgumentException();
 
         $this->minutes = $minutes;
-        if(!is_int($minutes) || $minutes < 0)
+        if(!is_int($minutes) || $minutes < 0 || $minutes > 59)
             throw new InvalidArgumentException();
 
         $this->seconds = $seconds;
-        if(!is_int($seconds) || $seconds < 0)
+        if(!is_int($seconds) || $seconds < 0 || $seconds > 59)
             throw new InvalidArgumentException();
     }
 
