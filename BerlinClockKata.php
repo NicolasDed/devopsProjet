@@ -62,20 +62,19 @@ class BerlinClockKata
         return "O O O O O O O O O O O O<br>";
     }
 
-    public function singleHoursLamps()
+    public function singleHoursLamps():string
     {
         if($this->hours %5 !=0){
             if($this->hours %5 ==4)
-                echo "R R R R<br>";
-            else if($this->hours %5 ==3)
-                echo "R R R O<br>";
-            else if($this->hours %5 ==2)
-                echo "R R O O<br>";
-            else if($this->hours %5 ==1)
-                echo "R O O O<br>";
+                return "R R R R<br>";
+            if($this->hours %5 ==3)
+                return "R R R O<br>";
+            if($this->hours %5 ==2)
+                return "R R O O<br>";
+            if($this->hours %5 ==1)
+                return "R O O O<br>";
         }
-        echo "O O O O<br>";
-        return 0;
+        return "O O O O<br>";
     }
 
     public function fiveHoursLamps()
