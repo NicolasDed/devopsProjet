@@ -83,13 +83,13 @@ class BerlinClockKata
     public function fiveHoursLamps()
     {
         if($this->hours %5 == 0){
-            if($this->minutes >=20)
+            if($this->hours >=20)
                 echo "R R R R<br>";
-            if($this->minutes >=15)
+            if($this->hours >=15)
                 echo "R R R O<br>";
-            if($this->minutes >=10)
+            if($this->hours >=10)
                 echo "R R O O<br>";
-            if($this->minutes >=5)
+            if($this->hours >=5)
                 echo "R O O O<br>";
         }
         echo "O O O O<br>";
