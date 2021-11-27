@@ -20,11 +20,47 @@ class BerlinClockKata
 
     public function singleMinutesLamps()
     {
+        if($this->minutes %5 != 0) {
+            if ($this->minutes % 5 == 4)
+                echo "Y Y Y Y O<br>";
+            else if ($this->minutes % 5 == 3)
+                echo "Y Y Y O O<br>";
+            else if($this->minutes %5 == 2)
+                echo "Y Y O O O<br>";
+            else if($this->minutes %5 == 1)
+                echo "Y O O O O<br>";
+        }
+        echo "O O O O O<br>";
         return 0;
     }
 
     public function fiveMinutesLamps()
     {
+        if($this->minutes %5 == 0){
+            if($this->minutes >=55)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=50)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=45)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=40)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=35)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=30)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=25)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=20)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=15)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=10)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+            else if($this->minutes >=5)
+                echo "Y Y R Y Y R Y Y R Y Y O<br>";
+        }
+        echo "O O O O O O O O O O O O<br>";
         return 0;
     }
 
@@ -40,6 +76,11 @@ class BerlinClockKata
 
     public function secondsLamp()
     {
+        if ($this->seconds %2 == 0){
+            echo "Y<br>";
+            return 1;
+        }
+        echo "O<br>";
         return 0;
     }
 
