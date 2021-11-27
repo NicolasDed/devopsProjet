@@ -84,5 +84,10 @@ class BerlinClockKata
         return 0;
     }
 
+    public function clockMaker()
+    {
+        return 0;
+    }
+
 
 }

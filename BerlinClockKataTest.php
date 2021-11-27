@@ -162,4 +162,12 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals(1, $actual);
     }
 
+    // clock maker
+    public function testClockMakerGiven00h00m00s()
+    {
+        $berlinclockkata = new BerlinClockKata(0, 0, 0);
+        $actual = $berlinclockkata->clockMaker();
+        $this->assertEquals(,$actual);
+    }
+
 }
