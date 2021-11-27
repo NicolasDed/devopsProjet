@@ -77,29 +77,27 @@ class BerlinClockKata
         return "O O O O<br>";
     }
 
-    public function fiveHoursLamps()
+    public function fiveHoursLamps():string
     {
         if($this->hours %5 == 0){
             if($this->hours >=20)
-                echo "R R R R<br>";
+                return "R R R R<br>";
             if($this->hours >=15)
-                echo "R R R O<br>";
+                return "R R R O<br>";
             if($this->hours >=10)
-                echo "R R O O<br>";
+                return "R R O O<br>";
             if($this->hours >=5)
-                echo "R O O O<br>";
+                return "R O O O<br>";
         }
-        echo "O O O O<br>";
-        return 0;
+        return "O O O O<br>";
     }
 
-    public function secondsLamp()
+    public function secondsLamp():string
     {
         if ($this->seconds %2 == 0){
-            echo "Y<br>";
+            return"R<br>";
         }
-        echo "O<br>";
-        return 0;
+        return "O<br>";
     }
 
     public function clockMaker()
