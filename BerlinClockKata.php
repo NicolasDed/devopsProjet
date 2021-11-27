@@ -18,20 +18,19 @@ class BerlinClockKata
             throw new InvalidArgumentException();
     }
 
-    public function singleMinutesLamps()
+    public function singleMinutesLamps():string
     {
         if($this->minutes %5 != 0) {
             if ($this->minutes % 5 == 4)
-                echo "Y Y Y Y O<br>";
-            else if ($this->minutes % 5 == 3)
-                echo "Y Y Y O O<br>";
-            else if($this->minutes %5 == 2)
-                echo "Y Y O O O<br>";
-            else if($this->minutes %5 == 1)
-                echo "Y O O O O<br>";
+                return "Y Y Y Y O<br>";
+            if ($this->minutes % 5 == 3)
+                return "Y Y Y O O<br>";
+            if($this->minutes %5 == 2)
+                return "Y Y O O O<br>";
+            if($this->minutes %5 == 1)
+                return "Y O O O O<br>";
         }
-        echo "O O O O O<br>";
-        return 0;
+        return "O O O O O<br>";
     }
 
     public function fiveMinutesLamps()
