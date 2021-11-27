@@ -83,7 +83,6 @@ class BerlinClockKata
     {
         if ($this->seconds %2 == 0){
             echo "Y<br>";
-            return 1;
         }
         echo "O<br>";
         return 0;
