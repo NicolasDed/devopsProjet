@@ -33,34 +33,33 @@ class BerlinClockKata
         return "O O O O O<br>";
     }
 
-    public function fiveMinutesLamps()
+    public function fiveMinutesLamps():string
     {
         if($this->minutes %5 == 0){
             if($this->minutes >=55)
-                echo "Y Y R Y Y R Y Y R Y Y O<br>";
-            else if($this->minutes >=50)
-                echo "Y Y R Y Y R Y Y R Y O O<br>";
-            else if($this->minutes >=45)
-                echo "Y Y R Y Y R Y Y R O O O<br>";
-            else if($this->minutes >=40)
-                echo "Y Y R Y Y R Y Y O O O O<br>";
-            else if($this->minutes >=35)
-                echo "Y Y R Y Y R Y O O O O O<br>";
-            else if($this->minutes >=30)
-                echo "Y Y R Y Y R O O O O O O<br>";
-            else if($this->minutes >=25)
-                echo "Y Y R Y Y O O O O O O O<br>";
-            else if($this->minutes >=20)
-                echo "Y Y R Y O O O O O O O O<br>";
-            else if($this->minutes >=15)
-                echo "Y Y R O O O O O O O O O<br>";
-            else if($this->minutes >=10)
-                echo "Y Y O O O O O O O O O O<br>";
-            else if($this->minutes >=5)
-                echo "Y O O O O O O O O O O O<br>";
+                return "Y Y R Y Y R Y Y R Y Y O<br>";
+            if($this->minutes >=50)
+                return "Y Y R Y Y R Y Y R Y O O<br>";
+            if($this->minutes >=45)
+                return "Y Y R Y Y R Y Y R O O O<br>";
+            if($this->minutes >=40)
+                return "Y Y R Y Y R Y Y O O O O<br>";
+            if($this->minutes >=35)
+                return "Y Y R Y Y R Y O O O O O<br>";
+            if($this->minutes >=30)
+                return "Y Y R Y Y R O O O O O O<br>";
+            if($this->minutes >=25)
+                return "Y Y R Y Y O O O O O O O<br>";
+            if($this->minutes >=20)
+                return "Y Y R Y O O O O O O O O<br>";
+            if($this->minutes >=15)
+                return "Y Y R O O O O O O O O O<br>";
+            if($this->minutes >=10)
+                return "Y Y O O O O O O O O O O<br>";
+            if($this->minutes >=5)
+                return "Y O O O O O O O O O O O<br>";
         }
-        echo "O O O O O O O O O O O O<br>";
-        return 0;
+        return "O O O O O O O O O O O O<br>";
     }
 
     public function singleHoursLamps()
