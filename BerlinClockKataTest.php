@@ -25,7 +25,7 @@ class BerlinClockKataTest extends TestCase
     {
         $berlinclockkata = new BerlinClockKata(0, 12, 0);
         $actual = $berlinclockkata->singleMinutesLamps();
-        $this->assertEquals("Y Y 0 0", $actual);
+        $this->assertEquals("Y Y O O", $actual);
     }
 
     public function testSingleMinutesLampsGiven18ShouldReturn3()
@@ -167,7 +167,7 @@ class BerlinClockKataTest extends TestCase
     {
         $berlinclockkata = new BerlinClockKata(0, 0, 0);
         $actual = $berlinclockkata->clockMaker();
-        $this->assertEquals("Y" + "O O O O" + "O O O O" + "0 0 0 0 0 0 0 0 0 0 0" + "0 0 0 0", $actual);
+        $this->assertEquals("Y" + "O O O O" + "O O O O" + "O O O O O O O O O O O" + "O O O O", $actual);
     }
 
     public function testClockMakerGiven23h59m59s()
