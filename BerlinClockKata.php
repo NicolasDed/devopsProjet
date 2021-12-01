@@ -100,7 +100,7 @@ class BerlinClockKata
         return "O<br>";
     }
 
-    public function clockMaker()
+    public function clockMaker():string
     {
         return
         $this->secondsLamp() +
