@@ -167,14 +167,14 @@ class BerlinClockKataTest extends TestCase
     {
         $berlinclockkata = new BerlinClockKata(0, 0, 0);
         $actual = $berlinclockkata->clockMaker();
-        $this->assertEquals("Y<br>" + "O O O O<br>" + "O O O O<br>" + "O O O O O O O O O O O<br>" + "O O O O<br>", $actual);
+        $this->assertEquals("R<br>" . "O O O O<br>" . "O O O O<br>" . "O O O O O O O O O O O<br>" . "O O O O<br>", $actual);
     }
 
     public function testClockMakerGiven23h59m59s()
     {
         $berlinclockkata = new BerlinClockKata(23, 59, 59);
         $actual = $berlinclockkata->clockMaker();
-        $this->assertEquals("O<br>" + "R R R R<br>" + "R R R O<br>" + "Y Y R Y Y R Y Y R Y Y<br>" + "Y Y Y Y<br>", $actual);
+        $this->assertEquals("O<br>" . "R R R R<br>" . "R R R O<br>" . "Y Y R Y Y R Y Y R Y Y<br>" . "Y Y Y Y<br>", $actual);
     }
 
 }
